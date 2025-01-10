@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style-responsivo.css" />
+
+    <title>Audi</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="interface">
+        <div class="topo-header">
+          <div class="btn-menu">
+            <button id="btn-menu" onclick="menu_ativo()">
+              <div class="linhas">
+                <span class="linha"></span><span class="linha"></span
+                ><span class="linha"></span>
+              </div>
+              <div class="txt-menu">Menu</div>
+            </button>
+          </div>
+          <div class="logo">AUDI</div>
+        </div>
+
+        <div class="menu">
+          <div class="left-menu">
+            <a href="index.html"><button>Home</button></a>
+            <a href="#"
+              ><button onclick="toggleMenu()">
+                Modelos <i class="bi bi-caret-down-fill"></i></button
+            ></a>
+            <div class="modelos-menu" id="modelos-menu">
+              <div class="modelo-menu" id="sedan-menu">
+                <a href="https://www.audi.com.br/pt/models/a3/a3-sedan-new/"
+                  ><button>Audi A3</button></a
+                >
+                <a href="https://www.audi.com.br/pt/models/a4/a4-sedan/"
+                  ><button>Audi A4</button></a
+                >
+                <a href="https://www.audi.ca/en/models/a6/a6-sedan/"
+                  ><button>Audi A6</button></a
+                >
+              </div>
+
+              <div class="modelo-menu" id="suv-menu">
+                <a href="https://www.audi.com.br/pt/models/a6/rs-6-avant/"
+                  ><button>Audi Q3</button></a
+                >
+                <a href="https://www.audi.com.br/pt/models/q5/q5/"
+                  ><button>Audi Q5</button></a
+                >
+                <a href="https://www.audi.com.br/pt/models/q7/q7-suv-2025/"
+                  ><button>Audi Q7</button></a
+                >
+              </div>
+
+              <div class="modelo-menu" id="eletrico-menu">
+                <a
+                  href="https://www.audi.com.br/pt/models/e-tron-gt/audi-e-tron-gt/"
+                  ><button>Audi e-tron GT</button></a
+                >
+                <a href="https://www.audi.com.br/pt/models/q3/q3-sportback/"
+                  ><button>Audi Q4 e-tron</button></a
+                >
+                <a
+                  href="https://www.audi.com.br/pt/models/q5/q5-sportback-tfsi-e-2023/"
+                  ><button>Audi e-tron Sportback</button></a
+                >
+              </div>
+
+              <div class="modelo-menu" id="esportivo-menu">
+                <a
+                  href="https://www.audiusa.com/en/models/r8/r8-heritage/2024/overview/"
+                  ><button>Audi R8</button></a
+                >
+                <a href="https://www.audi.com.br/pt/models/a5/rs-5-sportback/"
+                  ><button>Audi RS5</button></a
+                >
+                <a href="https://www.audi.com.br/pt/models/a6/rs-6-avant/"
+                  ><button>Audi RS6 Avant</button></a
+                >
+              </div>
+            </div>
+
+            <a href="https://www.audi.com.br/pt/companhia/audi-no-brasil/"
+              ><button>Sobre</button></a
+            >
+            <a href="https://www.audi.com.br/pt/contato0/"
+              ><button>Contato</button></a
+            >
+          </div>
+        </div>
+        <div class="Foto">
+          <img src="../assets/images/A3-menu.jpeg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <section class="slider" id="home">
+      <div class="interface">
+        <div class="slider-container">
+          <div class="slider-box ativo">
+            <img src="../assets/images/R8.jpg" alt="" />
+            <div class="texto-slider">
+              <h2>Audi R8</h2>
+              <p>
+                Uma máquina projetada para velocidade e design impressionante. A
+                escolha ideal para quem busca performance máxima.
+              </p>
+            </div>
+          </div>
+
+          <div class="slider-box">
+            <img src="../assets/images/Carro2.jpg" alt="" />
+            <div class="texto-slider">
+              <h2>Audi RS6</h2>
+              <p>
+                Um sedan esportivo com espaço e potência para qualquer aventura.
+              </p>
+            </div>
+          </div>
+
+          <div class="slider-box">
+            <img src="../assets/images/Carro3.jpg" alt="" />
+            <div class="texto-slider">
+              <h2>Audi A3</h2>
+              <p>
+                Elegância e eficiência em cada detalhe, perfeito para o dia a
+                dia.
+              </p>
+            </div>
+          </div>
+
+          <div class="slider-box">
+            <img src="../assets/images/Carro4.jpg" alt="" />
+            <div class="texto-slider">
+              <h2>Audi A4</h2>
+              <p>Sofisticação e tecnologia em harmonia perfeita.</p>
+            </div>
+          </div>
+
+          <div class="slider-box">
+            <img src="../assets/images/Q5.jpg" alt="" />
+            <div class="texto-slider">
+              <h2>Audi Q5</h2>
+              <p>
+                Um SUV premium que combina conforto e segurança para toda a
+                família.
+              </p>
+            </div>
+          </div>
+
+          <div class="slider-box">
+            <img src="../assets/images/Carro6.jpg" alt="" />
+            <div class="texto-slider">
+              <h2>Audi RS3</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate cumque officiis atque cupiditate, laboriosam id
+                consequatur harum recusandae rem, provident, dolor quasi optio
+                facilis soluta esse temporibus eveniet sed? Provident!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Setas -->
+        <div class="setas">
+          <button id="anterior"><i class="bi bi-caret-left-fill"></i></button>
+          <button id="proximo"><i class="bi bi-caret-right-fill"></i></button>
+        </div>
+
+        <!-- Botões de navegação -->
+        <div class="btn-nav-box">
+          <div class="btn-nav ativo"></div>
+          <div class="btn-nav"></div>
+          <div class="btn-nav"></div>
+          <div class="btn-nav"></div>
+          <div class="btn-nav"></div>
+          <div class="btn-nav"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <div class="interface">
+        <div class="categoria">
+          <div class="historia-categoria">
+            <div class="texto-categoria">
+              <h2>Sedans</h2>
+              <p>
+                Os sedans Audi representam o equilíbrio perfeito entre luxo,
+                tecnologia e performance.
+              </p>
+            </div>
+
+            <img
+              src="https://media.audi.com/is/image/audi/nemo/models/a4/a4-limousine/my-2023/stage-large-image/AOZ_A4_D_191002_2-L.jpg?width=1920"
+              alt=""
+            />
+          </div>
+
+          <div class="modelos-categoria">
+            <div
+              class="modelo-categoria"
+              style="
+                background-image: url(https://media.audi.com/is/image/audi/nemo/br/models/A3/2021/sedan/1920x1920-audi-a3-sedan-my2021-1021_retoque.jpg?auto=webp&width=1920);
+              "
+            >
+              <div class="nome-serie">
+                <h3>Audi A3</h3>
+
+                <a href="#"><button>Comprar o A3</button></a>
+              </div>
+            </div>
+
+            <div
+              class="modelo-categoria"
+              style="
+                background-image: url(https://media.audi.com/is/image/audi/nemo/br/models/A4/A4Sedan/2024/A4_Sedan_Quattro_5.jpeg?width=1920);
+              "
+            >
+              <div class="nome-serie">
+                <h3>Audi A4</h3>
+
+                <a href="#"><button>Comprar o A4</button></a>
+              </div>
+            </div>
+
+            <div
+              class="modelo-categoria"
+              style="
+                background-image: url(https://nar.media.audi.com/is/image/audinar/nemo/us/models/A6/A6-Sedan/MY25/1920x1080_MY25---A6---Exterior---Front---Profile---Parked---181012.jpg?width=1920);
+              "
+            >
+              <div class="nome-serie">
+                <h3>Audi A6</h3>
+
+                <a href="#"><button>Comprar o A6</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoria">
+          <div class="historia-categoria">
+            <img
+              src="https://media.audi.com/is/image/audi/nemo/models/q8-e-tron/q8-e-tron/my-2023/parallax-teaser/Q8e_2022_4399_withoutCast-L.jpg?auto=webp&width=1920"
+              alt=""
+            />
+
+            <div class="texto-categoria">
+              <h2>SUVs</h2>
+              <p>
+                Projetados para a família, aventura e conforto, os SUVs Audi
+                oferecem robustez e sofisticação.
+              </p>
+            </div>
+          </div>
+
+          <div class="modelos-categoria">
+            <div
+              class="modelo-categoria"
+              style="
+                background-image: url(https://media.audi.com/is/image/audi/nemo/br/models/Q3/1.jpg?width=1920);
+              "
+            >
+              <div class="nome-serie">
+                <h3>Audi Q3</h3>
+
+                <a href="#"><button>Comprar o Q3</button></a>
+              </div>
+            </div>
+
+            <div
+              class="modelo-categoria"
+              style="
+                background-image: url(https://media.audi.com/is/image/audi/nemo/br/models/Q5/Q5-2021/Retoque%20730x730-audi-q5-dynamic-side-my2021-0363.jpg?width=864&auto=webp);
+              "
+            >
+              <div class="nome-serie">
+                <h3>Audi Q5</h3>
+
+                <a href="#"><button>Comprar o Q5</button></a>
+              </div>
+            </div>
+
+            <div
+              class="modelo-categoria"
+              style="
+                background-image: url(https://media.audi.com/is/image/audi/nemo/br/Q7-2e.jpg?auto=webp&width=1920);
+              "
+            >
+              <div class="nome-serie">
+                <h3>Audi Q7</h3>
+
+                <a href="#"><button>Comprar o Q7</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoria">
+          <div class="historia-categoria">
+            <div class="texto-categoria">
+              <h2>Esportivos</h2>
+              <p>
+                Alta performance e design arrojado, projetados para
+                impressionar.
+              </p>
+            </div>
+
+            <img
+              src="https://nar.media.audi.com/is/image/audinar/nemo/us/models/A3/2024-RS3Sedan/1920x1080_MY24-RS3-Parked-Side-Profile.jpg?width=1920"
+              alt=""
+            />
+          </div>
+
+          <div class="modelos-categoria">
+            <div
+              class="modelo-categoria"
+              style="
+                background-image: url(https://nar.media.audi.com/is/image/audinar/nemo/us/models/R8/R8-Heritage/1920x1080_CF029036.jpg?width=1920);
+              "
+            >
+              <div class="nome-serie">
+                <h3>Audi R8</h3>
+
+                <a href="#"><button>Comprar o R8</button></a>
+              </div>
+            </div>
+
+            <div
+              class="modelo-categoria"
+              style="
+                background-image: url(https://nar.media.audi.com/is/image/audinar/nemo/us/models/A3/2022-RS3Sedan/1920x1080-RS3_2021_3560_US.jpg?width=1920);
+              "
+            >
+              <div class="nome-serie">
+                <h3>Audi RS3</h3>
+
+                <a href="#"><button>Comprar o RS3</button></a>
+              </div>
+            </div>
+
+            <div
+              class="modelo-categoria"
+              style="
+                background-image: url(https://media.audi.com/is/image/audi/nemo/br/models/A6/rs-6-avant-performance-2024/A1916243_large.jpg?width=864&auto=webp);
+              "
+            >
+              <div class="nome-serie">
+                <h3>Audi RS5 Sportback</h3>
+
+                <a href="#"><button>Comprar o RS5 Sportback</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoria">
+          <div class="historia-categoria">
+            <img
+              src="https://media.audi.com/is/image/audi/nemo/br/models/Q5/q5-phev-2022/1920x1080-q5_2020_2167_2.jpg?width=1920"
+              alt=""
+            />
+
+            <div class="texto-categoria">
+              <h2>Elétricos</h2>
+              <p>
+                Audi lidera o futuro com veículos elétricos elegantes e
+                sustentáveis.
+              </p>
+            </div>
+          </div>
+
+          <div class="modelos-categoria">
+            <div
+              class="modelo-categoria"
+              style="
+                background-image: url(https://media.audi.com/is/image/audi/nemo/models/audi-e-tron-gt/rs-e-tron-gt/my-2022/NeMo-Carline-Startpage/730x730-mtc-1-1-framed/730x730-audi-rs-e-tron-performance.jpg?width=864&auto=webp);
+              "
+            >
+              <div class="nome-serie">
+                <h3>Audi e-tron GT</h3>
+
+                <a href="#"><button>Comprar o e-tron GT</button></a>
+              </div>
+            </div>
+
+            <div
+              class="modelo-categoria"
+              style="
+                background-image: url(https://cf-cdn-v6-api.audi.at/images/0b34a0b188f14e731a0e65e12917808bdef08965/9937d759-d0f5-4cc0-b4dd-94dc1942feda/crop:SMART/resize:1920:1080/16drivingdynamicsdesktop);
+              "
+            >
+              <div class="nome-serie">
+                <h3>Audi Q4 e-tron</h3>
+
+                <a href="#"><button>Comprar o Q4 e-tron</button></a>
+              </div>
+            </div>
+
+            <div
+              class="modelo-categoria"
+              style="
+                background-image: url(https://media.audi.com/is/image/audi/nemo/br/Q8e_2022_4387_withoutCast-L.jpg?width=864&auto=webp);
+              "
+            >
+              <div class="nome-serie">
+                <h3>Audi e-tron Sportback</h3>
+
+                <a href="#"><button>Comprar o e-tron Sportback</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tecnologias">
+      <h2>Tecnologias Audi</h2>
+      <div class="interface">
+        <div class="tecnologia">
+          <h3>Tração Quattro</h3>
+          <p>Garantia de segurança e estabilidade em qualquer terreno.</p>
+        </div>
+
+        <div class="tecnologia">
+          <h3>Tecnologia Mild Hybrid (MHEV)</h3>
+          <p>Economia de combustível e eficiência energética.</p>
+        </div>
+
+        <div class="tecnologia">
+          <h3>Audi Virtual Cockpit</h3>
+          <p>Painel digital personalizável e futurista.</p>
+        </div>
+
+        <div class="tecnologia">
+          <h3>Faróis de LED Matrix</h3>
+          <p>Maior visibilidade e segurança noturna.</p>
+        </div>
+
+        <div class="tecnologia">
+          <h3>Conectividade avançada</h3>
+          <p>Compatível com Apple CarPlay e Android Auto.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="interface">
+        <div class="links">
+          <p>Links rapidos</p>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li>
+              <a href="https://www.audi.com.br/pt/companhia/audi-no-brasil/"
+                >Sobre</a
+              >
+            </li>
+            <li><a href="https://www.audi.com.br/pt/contato0/">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="contato-footer">
+          <p>Contato</p>
+          <a href="">
+            <p>endereço</p>
+          </a>
+          <a href="">
+            <p>telefone</p>
+          </a>
+        </div>
+
+        <div class="redes-footer">
+          <a href="#"
+            ><button><i class="bi bi-instagram"></i></button
+          ></a>
+          <a href="#"
+            ><button><i class="bi bi-twitter-x"></i></button
+          ></a>
+          <a href="#"
+            ><button><i class="bi bi-facebook"></i></button
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="../js/main.js" defer></script>
+</html>
